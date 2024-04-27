@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    font-family: "Montserrat", serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75), rgba(164, 214, 249, 0.774)), url("images/bg_pics.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(2px);
+    -webkit-filter: blur(1px); */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0.5rem 5rem;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;    
+}
+
+a i {
+    color: #000000;
+    font-size: 1.7em;
+}
+
+p {
+    font-size: 1.1em;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    /* text-decoration: underline; */
+    letter-spacing: 2px;
+    /* word-spacing: 10px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.link {
+    color: #000000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link:hover,
+.link:hover i {
+    color: #987f01;
+}
+
+span {
+   color: #987f01;
+}
+
+.product-img {
+    /* border: 5px solid #000; */
+    border-radius: 1rem 1rem 0 0;
+    height: 220px;
+
+}
+
+.about-main {
+    display: flex;
+    padding: 3.7rem 6rem;
+}
+
+.about-mission {
+    margin-right: 250px;
+    text-align: justify;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.cta {
+    margin: 70px auto;
+    font-size: 1.5em;
+    background-color: rgba(228, 231, 238, 0.516);
+    padding: 4rem;
+    border-radius: 0 50% 0 50%;
+    outline: 10px dotted rgba(75, 75, 75, 0.491);
+    width: 70%;
+    text-align: center;
+    box-shadow: 0 0 20px #000;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.cta-btn {
+    background-color: #2e2e5b;
+    color: whitesmoke;
+    padding: 0.8rem 2rem;
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #987f01;
+
+}
+
+.about-main video {
+    outline: 7px dotted #3333337f;
+    border-radius: 10px;
+    transition: fadeUp 0.5s ease-in-out;
+    animation: fadeUp 0.8s ease;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product-header a p {
+    font-size: 1em;
+    color: #0b0b93;
+    transition: 0.3s;
+}
+
+.product-header a p:hover {
+    color: #987f01;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-card {
+    width: 250px;
+    background-color: #b8b6b6;
+    border-radius: 15px;
+    margin: 0 0 50px 0;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 10px #0000009e;
+    transition: transform 0.8s ease;
+}
+
+.product-card:hover {
+    /* transform: translate(0px,-20px); */
+    transform: scale(1.04,1.04);
+}
+
+.card-details {
+    padding: 1rem;
+}
+
+.card-details h3 {
+    margin: 0 0;
+}
+
+.card-details p {
+    font-size: 1em;
+}
+
+button {
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(13, 13, 156);
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    box-shadow: -1px 2px 5px #0000008d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #987f01;
+}
+
+.inline {
+    display: inline;
+}
+
+.slash {
+    text-decoration: line-through;
+    font-size: 0.7em;
+    font-style: italic;
+    margin-right: 3px;
+    margin-left: 10px;
+}
+
+.amazon {
+    font-size: 0.9em;
+    color: #0b0b93;
+    text-decoration: underline;
+}
+
+.partners {
+    text-align: center;
+    word-spacing: 100px;
+}
+
+.partners h2 {
+    font-size: 2em;
+    color: #605a5a;
+    border-bottom: 2px solid rgba(42, 40, 40, 0.468);
+    padding-bottom: 1rem;
+}
+
+.partners p {
+    animation: fadeDown 1s ease-in-out;
+}
+
+.partners p i {
+    font-size: 2em;
+    color: rgba(56, 54, 54, 0.601);
+    text-shadow: -1.5px 1.5px 3px #987f0157;
+}
+
+footer {
+    /* margin-top: 330px; */
+    background-color: #4b4949;
+    color: whitesmoke;
+    padding: 5px;
+    /* text-align: center; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 900px;
+}
+
+footer p {
+    margin: 12px;
+}
+
+footer div {
+    font-size: 1.5em;
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
+
+/* 
+RGB - Red, Green, Blue
+RGB(255, 0, 0)
+#00FF00
+*/
+
+/* 
+style all links with the following properties:
+- color: 999
+- remove every text decoration
+*/
+
+
+@keyframes fadeUp{
+    from{
+      opacity:0.1;
+      transform: translateY(-70px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+      opacity:0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+@keyframes fadeDown {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
